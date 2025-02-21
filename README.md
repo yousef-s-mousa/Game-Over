@@ -14,6 +14,6 @@
 To get started with the project, clone the repository and open `index.html` in your browser.
 
 ```sh
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/yousef-s-mousa/Game-Over
+cd Game-Over
 open index.html

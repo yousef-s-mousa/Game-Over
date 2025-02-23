@@ -50,7 +50,7 @@ function displayGames(show){
 let cartona=""
 for(let i=0 ; i < games.length ; i++){
     cartona+= `
-    <div class="col-md-3">
+    <div class="col-md-3 justify-content-center d-flex">
                 <div>
                     <div class="card  pt-3 border-black border-1 text-white" role="button" onclick="showDetails(${show[i].id})" style="width: 18rem;">
                          <img src="${show[i].thumbnail}" class="card-img-top px-2" alt="...">

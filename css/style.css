@@ -17,6 +17,7 @@ body{
 }
 .card{
     background-color:#272b30 ;
+    height: 400px;
 }
 .cardfooter{
     background-color: #272B2F;

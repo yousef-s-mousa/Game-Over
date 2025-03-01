@@ -50,24 +50,23 @@ function displayGames(show){
 let cartona=""
 for(let i=0 ; i < games.length ; i++){
     cartona+= `
-    <div class="col-md-3 justify-content-center d-flex">
-                <div>
-                    <div class="card  pt-3 border-black border-1 text-white" role="button" onclick="showDetails(${show[i].id})" style="width: 18rem;">
-                         <img src="${show[i].thumbnail}" class="card-img-top px-2" alt="...">
-                        <div class="card-body justify-content-center text-center px-0">
-                          <div class="d-flex justify-content-between align-items-center p-2">
-                            <h5 class="card-title">${show[i].title}</h5>
-                            <a href="#" class="btn btn-primary">free</a>
-                          </div>  
-                          <p class="sdes">${show[i].short_description.split(" ",8).join(" ")}</p>
-                        </div>
-                        <div class="d-flex justify-content-between cardfooter py-1 px-1 ">
-                            <p class="m-0 text-uppercase kind">${show[i].genre}</p>
-                            <p class="m-0 text-uppercase platform">${show[i].platform}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>`
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <div class="card w-100 pt-3 border-black border-1 text-white" role="button" onclick="showDetails(${show[i].id})" style="width: 18rem;">
+            <img src="${show[i].thumbnail}" class="card-img-top px-2" alt="...">
+            <div class="card-body justify-content-center text-center px-0">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                    <h5 class="card-title">${show[i].title}</h5>
+                    <a href="#" class="btn btn-primary">free</a>
+                </div>  
+                <p class="sdes">${show[i].short_description.split(" ",8).join(" ")}</p>
+            </div>
+            <div class="d-flex justify-content-between cardfooter py-1 px-1">
+                <p class="m-0 text-uppercase kind">${show[i].genre}</p>
+                <p class="m-0 text-uppercase platform">${show[i].platform}</p>
+            </div>
+        </div>
+    </div>
+`
     
 }
 document.getElementById("gameview").innerHTML=cartona
